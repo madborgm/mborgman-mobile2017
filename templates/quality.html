@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>Quality of This Data</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  </head>
+
+  <body role="document">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About This Data Set</a></li>
+            <li class="active"><a href="/quality">Data Quality</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+	<h1>Quality: About This Data Set</h1>
+        <p>Completeness, Coherence, and Correctness in my "Quantified Self" Experiment</p>
+      </div>
+
+    
+      <div class="page-header">
+	<h2>Is the data complete?</h2>
+	<p>There were many locations that were missing from my data set. AWARE didn't push to my database every second, therefore, there were only instances in my data set when the framework tracked and pushed.</p>
+     <p> Additionally, it's easy to see on the map of my trip to New York, there is a big gap where there aren't any location check-ins. For that part of the drive, my phone's battery was low and I was taking a 
+     nap in the backseat. To save charge and not be interrupted, I put my phone on Airplane mode. The framework had not connection to track or push information, leading to the large data gap.</p>
+      </div>
+      
+      <div class="page-header">
+	<h2>Is the data coherent?</h2>
+	<p>Since this data is all about myself and my habits. I was the subject matter expert to determine if the data made sense to itself. I actually was surpised at how it had exact location tracking correlating to where I should have been at a certain time.</p>
+	<p> However, there were some lattitude/longitude pairs that seemed scattered. When I walk to class, I typically listen to music on Spotify. In order to stream music, I often have to turn off my Wi-Fi and use cellular data. The app seemed to have sporadic locations during the times I was
+	walking to class and would have turned off my Wi-Fi. The connection could have been damaged causing these abnormalities. </p>
+      </div>
+
+      <div class="page-header">
+	<h2>Is the data correct?</h2>
+	<p>The most obvious discrepancy in my data was exact times. As I mentioned, I am a creature of habit. I also like to arrive to class atleast 5 minutes early in order to get settled before a lecture begins. However, my data
+	often had my timestamps 5 minutes behind when I was actually in a location. I verifed this by comparing the timestamp to the location from my latitude and longitude. However, I am self reporting and could have forgotten that on one day I was running late.</p>
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+  </body>
+</html>
